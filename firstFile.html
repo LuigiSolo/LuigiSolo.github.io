@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        th{border-style: outset;
+        }
+
+    </style>
+    <script>
+        function textTo(element, color){
+            document.getElementById(element).style.color =color
+        }
+        function buckgroundTo(element, color){
+            document.getElementById(element).style.backgroundColor=color
+        }
+    </script>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1 id="hi">I can change color</h1>
+<table>
+    <tr>
+        <th style="color:red" onclick="textTo('hi', 'red')">red</th>
+        <th style="color:green" onclick="textTo('hi', 'green')">green</th>
+        <th style="color:blue" onclick="textTo('hi', 'blue')">blue</th>
+</table>
+
+<h1 id="me">I can change color</h1>
+<table>
+    <tr>
+        <th style="color:red" onclick="buckgroundTo('me','red')">red</th>
+        <th style="color:green" onclick="buckgroundTo('me','green')">green</th>
+        <th style="color:blue" onclick="buckgroundTo('me','blue')">blue</th>
+    </tr>
+</table>
+
+
+<h1 id="so">I can change color</h1>
+<table>
+    <tr>
+        <th style="color:red" onclick="buckgroundTo('so','red')">red</th>
+        <th style="color:green" onclick="buckgroundTo('so','green')">green</th>
+        <th style="color:blue" onclick="buckgroundTo('so','blue')">blue</th>
+    </tr>
+    <tr>
+        <th style="color:red" onclick="textTo('so','red')">red</th>
+        <th style="color:green" onclick="textTo('so','green')">green</th>
+        <th style="color:blue" onclick="textTo('so','blue')">blue</th>
+    </tr>
+</table>
+
+</body>
+</html>
